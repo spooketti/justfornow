@@ -1,8 +1,6 @@
-import asyncio
 from aiohttp import web
 import aiohttp_cors
 from aiortc import RTCPeerConnection, RTCSessionDescription, RTCIceServer, RTCConfiguration
-import json
 
 # Global variables
 video_track = None

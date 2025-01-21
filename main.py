@@ -108,6 +108,11 @@ cors = aiohttp_cors.setup(app, defaults={
         expose_headers="*",
         allow_headers="*",
     ),
+    "https://nighthawkcoders.github.io": aiohttp_cors.ResourceOptions(
+        allow_credentials=True,
+        expose_headers="*",
+        allow_headers="*",
+    ),
     # Add other specific origins if needed, for example:
     # "http://another-allowed-origin.com": aiohttp_cors.ResourceOptions(
     #     allow_credentials=True,

@@ -130,7 +130,7 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description="Aiohttp WebRTC Server")
     parser.add_argument("--host", default="0.0.0.0", help="Host for HTTP server (default: 0.0.0.0)")
-    parser.add_argument("--port", type=int, default=8080, help="Port for HTTP server (default: 8080)")
+    parser.add_argument("--port", type=int, default=443, help="Port for HTTP server (default: 8080)")
     args = parser.parse_args()
 
     web.run_app(app, host=args.host, port=args.port)
